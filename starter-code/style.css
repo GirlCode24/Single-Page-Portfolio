@@ -187,7 +187,8 @@
     padding-top: 8rem;
     padding-left: 1.48rem;
 }
-.Illustrations h2{
+
+.Illustrations h2 {
     width: 5rem;
     font-weight: bold;
     line-height: auto;
@@ -197,7 +198,8 @@
     padding-top: 6.5rem;
     padding-left: 1.52rem;
 }
-.Photography h2{
+
+.Photography h2 {
     width: 11.37rem;
     font-weight: bold;
     line-height: auto;
@@ -207,7 +209,8 @@
     padding-top: 8rem;
     padding-left: 1.5rem;
 }
-.motion-graphics h2{
+
+.motion-graphics h2 {
     width: 14.18rem;
     font-weight: bold;
     line-height: auto;
@@ -216,4 +219,62 @@
     color: var(--denary-color);
     padding-top: 8rem;
     padding-left: 1.5rem;
+}
+
+/* Summary */
+.summary-group{
+    width:21.4rem;
+    height: 37.6rem;
+    border-spacing: 40px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-top: 6.25rem;
+    /* padding-bottom: 100px; */
+
+}
+.summary-content img{
+    width: 18.75rem;
+    height: 18.75rem;
+    align-items: center;
+
+}
+.summary-content {
+    width: 18.75rem;
+    height: 18.75rem;
+    align-items: center;
+    margin: 0 auto;
+   
+}
+.summary-text h2{
+    width: 21.43rem;
+    font-weight: bold;
+    line-height: auto;
+    letter-spacing: 0px;
+    text-align: center;
+    font-size: 1.6rem;
+    color: var(--octonary-color);
+    padding-top: 2.5rem;
+    padding-bottom: 1.5rem;
+}
+.summary-text p{
+    width: 21.43rem;
+    font-size: 1rem;
+    font-weight: medium;
+    line-height: 1.6rem;
+    letter-spacing: 0px;
+    text-align: center;
+    color: var(--nonary-color);
+    padding-bottom: 2.5rem;
+}
+.summary-button {
+    width: 11rem;
+    height: 2.75rem;
+    border-radius: 1.75rem;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0px;
+    font-weight: bold;
+    background-color: var(--secondary-color);
+    color: var(--denary-color);
+    margin-left: 5.25rem;
 }
