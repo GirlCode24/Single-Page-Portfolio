@@ -19,8 +19,9 @@
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
-.body {
+body {
     background-color: var(--denary-color);
+    overflow-x: hidden;
 }
 
 /* Header */
@@ -29,8 +30,8 @@
     align-content: center;
     justify-content: space-between;
     margin: 1rem;
-
-
+    padding: 1rem;
+    min-width: 343px;
 }
 
 .logo {
@@ -59,7 +60,8 @@
 
 .container {
     text-align: center;
-    margin: 2rem;
+    margin: 0 auto;
+    min-width: 343px;
 }
 
 .intro {
@@ -98,52 +100,49 @@
 }
 
 .design {
-    /* width: 21.43rem; */
-    margin: 1rem;
-    height: 22.75rem;
+    /* height: 100%; */
     background-color: var(--primary-color);
     border-radius: 8px;
-
+    padding: 1rem;
+    width: 100%;
 }
 
+
+
 .UIUX {
-    width: 9.93rem;
-    height: 11.37rem;
     background-color: var(--secondary-color);
-    margin: 1rem;
+    min-width: 159px;
+    width: 100%;
     border-radius: 8px;
+    padding: 1rem;
 }
 
 .apps {
-    width: 9.93rem;
-    height: 11.37rem;
     background-color: var(--tertiary-color);
-    margin: 1rem;
+    min-width: 159px;
+    width: 100%;
     border-radius: 8px;
+    padding: 1rem;
 }
 
 .Illustrations {
-    /* width: 21.43rem; */
-    height: 9.87rem;
     background-color: var(--quinary-color);
-    margin: 1rem;
     border-radius: 8px;
+    padding: 1rem;
 }
 
 .Photography {
-    /* width: 21.43rem; */
-    height: 11.27rem;
     background-color: var(--senary-color);
-    margin: 1rem;
     border-radius: 8px;
+    padding: 1rem;
+    width: 100%;
 }
 
 .motion-graphics {
-    /* width: 21.43rem; */
-    height: 11.27rem;
     background-color: var(--septenary-color);
-    margin: 1rem;
     border-radius: 8px;
+    padding: 1rem;
+    width: 100%;
 }
 
 .design,
@@ -155,8 +154,39 @@
     position: relative;
 }
 
+.services {
+    box-sizing: border-box;
+    min-width: 343px;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
 .services-group {
     display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.top-services {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.mini-services {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.bottom-services {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
 }
 
 .design h2 {
@@ -227,14 +257,13 @@
 
 /* Summary */
 .summary-group {
-    width: 21.4rem;
-    height: 37.6rem;
+    min-width: 343px;
+    height: 602px-;
     border-spacing: 40px;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    padding-top: 6.25rem;
-    /* padding-bottom: 100px; */
-
+    margin: 0 auto;
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .summary-content img {
@@ -250,6 +279,11 @@
     align-items: center;
     margin: 0 auto;
 
+}
+
+.summary-text {
+    margin: 0 auto;
+    max-width: 343px;
 }
 
 .summary-text h2 {
@@ -295,23 +329,17 @@
 
 /* Works */
 .work {
-     /* width: 88.1rem; */
-    /* height: 21.12px; */ 
+    min-width: 343px;
     margin-top: 6.25rem;
-    padding-top: 6.25rem;
-   
 }
 
 .work-content h2 {
-    /* width: 6.3rem;
-    height: 1.87rem; */
     font-weight: bold;
     line-height: auto;
     letter-spacing: 0px;
     font-size: 1.6rem;
     color: var(--octonary-color);
-    /* padding-bottom: 1.5rem; */
-    /* text-align: center;  */
+
 }
 
 .work-content {
@@ -324,11 +352,9 @@
 
 .work-items {
     position: relative;
-    /* width: 100%; */
     height: 11.25rem;
     overflow: scroll;
     width: 88.12rem;
-
 }
 
 .work-items-images {
@@ -339,7 +365,6 @@
     bottom: 0;
     display: flex;
     gap: 1rem;
-    /* border-radius: 1rem; */
 }
 
 .work-items-images img {
@@ -374,7 +399,7 @@
     padding: 1rem;
     margin-bottom: 2.5rem;
     padding-top: 6.25rem;
-   
+    min-width: 343px;
 }
 
 .contact-content {
@@ -431,11 +456,161 @@
     cursor: pointer;
 
 }
+
 .contact-button:hover {
     background-color: var(--secondary-color);
 }
 
-footer.main-header{
+footer.main-header {
     margin: 16px 16px 32px 16px
 }
 
+/* Media Queries */
+/* Responsiveness For Tablet */
+@media screen and (min-width: 768px) {
+    .main-header {
+        margin: 2rem;
+    }
+
+    /* Content */
+    .intro {
+        margin-top: 4rem;
+
+    }
+
+    .intro-h1 {
+        font-size: 2.75rem;
+        width: 43.12rem;
+        font-weight: bold;
+        line-height: auto;
+        letter-spacing: 0px;
+
+    }
+
+    .intro p {
+        width: 35.81rem;
+        text-align: center;
+        margin: 0 auto;
+        padding-right: 3.6rem;
+    }
+
+    .services {
+        margin: 4rem 2.4rem 7.5rem 2.4rem;
+    }
+
+    .top-services {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+    .bottom-services {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .services-group {
+        min-width: 48.3%;
+    }
+
+    .summary-group {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        transform: translateX(-5rem);
+        width: 115%;
+        max-height: 364px;
+    }
+
+    .summary-text {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+
+    .summary-text h2 {
+        width: 21.18rem;
+        font-weight: bold;
+        line-height: auto;
+        letter-spacing: 0px;
+        text-align: left;
+        font-size: 2rem;
+        color: var(--octonary-color);
+    }
+
+    .summary-text p {
+        width: 21.18rem;
+        font-size: 1.125rem;
+        font-weight: medium;
+        line-height: 1.6rem;
+        letter-spacing: 0px;
+        text-align: left;
+        color: var(--nonary-color);
+        padding-bottom: 2.5rem;
+    }
+
+    .summary-button {
+        margin-left: 0;
+    }
+
+    .work-items {
+        height: 360px;
+    }
+
+    .work-items img {
+        min-width: 540px;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .container {
+        margin-bottom: 5rem;
+    }
+
+    .services {
+        max-width: 1110px;
+        width: 90%;
+        min-height: 364px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .top-services {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .services-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bottom-services {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%-30%;
+    }
+
+    .mini-services {
+        height: 100%;
+    }
+
+    .UIUX {
+        min-width: 10%;
+    }
+
+    .apps {
+        min-width: 10%;
+    }
+
+    .summary-group {
+        width: 1110px;
+    }
+
+
+
+}
